@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Naturalist -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/24/2018 6:34:12 PM -->
+<GameInfo>
+	
+	<!-- better naturalists -->
+	<Units>
+		<Update>
+			<Where UnitType="UNIT_NATURALIST"/>
+			<Set ParkCharges="4"/>
+		</Update>
+	</Units>
+	
+</GameInfo>

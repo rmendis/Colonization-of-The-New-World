@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NationalMonuments_Text -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/24/2018 3:04:16 AM -->
+<GameData>
+	<BaseGameText>
+		<Row Tag="LOC_POLICY_NATIONAL_MONUMENTS_NAME">
+			<Text>National Monuments</Text>
+		</Row>
+		<Row Tag="LOC_POLICY_NATIONAL_MONUMENTS_DESCRIPTION">
+			<Text>+2 Appeal to all tiles in a city with a National Park</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_NATIONAL_MONUMENTS_CHAPTER_HISTORY_PARA_1">
+			<Text>A National Monument in the United States is a protected area that is similar to a United States National Park, but can be created from any land owned or controlled by the federal government by proclamation of the President of the United States.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_NATIONAL_MONUMENTS_CHAPTER_HISTORY_PARA_2">
+			<Text>National monuments can be managed by one of several federal agencies: the National Park Service, United States Forest Service, United States Fish and Wildlife Service, or the Bureau of Land Management. Historically, some national monuments were managed by the War Department.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_NATIONAL_MONUMENTS_CHAPTER_HISTORY_PARA_3">
+			<Text>National monuments can be so designated through the power of the Antiquities Act of 1906. President Theodore Roosevelt used the act to declare Devils Tower in Wyoming as the first U.S. National Monument.</Text>
+		</Row>
+	</BaseGameText>
+</GameData>

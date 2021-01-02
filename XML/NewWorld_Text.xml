@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NewWorld_Text -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/22/2018 2:41:36 PM -->
+<GameData>
+	<FrontEndText>
+
+		<!-- Texts for Maps -->
+		<Row Tag="LOC_MAP_NEW_WORLD_NAME">
+			<Text>The New World</Text>
+		</Row>
+		<Row Tag="LOC_MAP_NEW_WORLD_DESCRIPTION">
+			<Text>An internally randomized map of the New World.</Text>
+		</Row>
+
+		<!-- Texts for Scenario -->
+		<Row Tag="LOC_NEW_WORLD_SCENARIO_NAME">
+			<Text>Colonization of The New World</Text>
+		</Row>
+		<Row Tag="LOC_NEW_WORLD_SCENARIO_TOOLTIP">
+			<Text>How will you settle The New World, through conquest or diplomacy? Will you plunder or protect? A 165 turn 6-player scenario.</Text>
+		</Row>
+		<Row Tag="LOC_NEW_WORLD_SCENARIO_DESCRIPTION">
+			<Text>In this 165 turn scenario, you race to colonise The New World. Will you pluder its vast natural resources or protect its cultural heritage and pristine beauty from the unrelentling advance of exploitation? The choice is yours. But there is no Domination, Religious or Science victory. In THE NEW WORLD you earn special points towards victory. (See below).[NEWLINE][NEWLINE]Single-player: Each difficulty has a total score threshold. Exceed that number before the end of the game to win.[NEWLINE][NEWLINE]Multiplayer: The player with the highest score at end of the game is the winner.</Text>
+		</Row>
+
+		<!-- victories -->
+		<Row Tag="LOC_VICTORY_MONUMENTS_NAME">
+			<Text>Eco Victory</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_MONUMENTS_TT">
+			<Text>Build 30 National Parks.</Text>
+		</Row>
+		<!--
+		<Row Tag="LOC_VICTORY_ENVIRONMENT_NAME">
+			<Text>Eco Victory</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ENVIRONMENT_TT">
+			<Text>Have 500 unimproved rainforest, forest and marsh tiles in your empire.</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ARCHAEOLOGY_NAME">
+			<Text>Archaeology Victory</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ARCHAEOLOGY_TT">
+			<Text>Excavate 18 artifacts from archaeology.</Text>
+		</Row>
+		-->
+		
+		<!-- mesoamerian religion -->
+		<Row Tag="LOC_RELIGION_MESOAMERICAN">
+			<Text>Mesoamerican</Text>
+		</Row>
+	</FrontEndText>
+</GameData>
+

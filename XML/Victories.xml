@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Victories -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/31/2018 2:01:24 PM -->
+<GameInfo>
+	<Types>
+		<!-- Victories -->
+		<Delete Type="VICTORY_DEFAULT"/>
+		<Delete Type="VICTORY_CUTLURE"/>
+		<Delete Type="VICTORY_RELIGIOUS"/>
+		<Delete Type="VICTORY_TECHNOLOGY"/>
+	</Types>
+
+	<!-- Disable 'Just One More Turn'-->
+	<Defeats>
+		<Update>
+			<Set OneMoreTurn="0"/>
+		</Update>
+	</Defeats>
+	<Victories>
+		<Update>
+			<Set OneMoreTurn="0" />
+		</Update>
+	</Victories>
+
+	<!-- Disable all victories except score and culture. -->
+	<Victories>
+		<!-- Set all victories to not be enabled by default -->
+		<Update>
+			<Set EnabledByDefault="0"/>
+		</Update>
+		<!-- Set only the victories we want to be enabled by default -->
+		<Update>
+			<Where VictoryType="VICTORY_SCORE"/>
+			<Set EnabledByDefault="1"/>
+		</Update>
+	</Victories>
+
+	<!-- Time Defeat -->
+	<!-- The standard time defeat is disabled if score victory is enabled. -->
+	<!-- This is because the score victory will ALWAYS trigger for at least 1 team -->
+	<!-- When max turn is reached. -->
+	<!-- HOWEVER! That is not the case with the scenario score victory. -->
+	<!-- The new time defeat depends on single-player and nobody winning a score victory. -->
+	<RequirementSets>
+		<Delete RequirementSetId="TIME_DEFEAT_REQUIREMENTS"/>
+		<Row>
+			<RequirementSetId>TIME_DEFEAT_REQUIREMENTS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>TIME_DEFEAT_PLAYER_EXCEEDS_SCORE_THRESHOLD</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>TIME_DEFEAT_REQUIREMENTS</RequirementSetId>
+			<RequirementId>TIME_DEFEAT_MAX_TURN_REACHED</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>TIME_DEFEAT_REQUIREMENTS</RequirementSetId>
+			<RequirementId>TIME_DEFEAT_NOBODY_SCORE_VICTORY</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>TIME_DEFEAT_REQUIREMENTS</RequirementSetId>
+			<RequirementId>TIME_DEFEAT_GAME_IS_SP</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>TIME_DEFEAT_PLAYER_EXCEEDS_SCORE_THRESHOLD</RequirementSetId>
+			<RequirementId>VICTORY_SCORE_PLAYER_EXCEEDS_SCORE_THRESHOLD</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row>
+			<RequirementId>TIME_DEFEAT_NOBODY_SCORE_VICTORY</RequirementId>
+			<RequirementType>REQUIREMENT_COLLECTION_ANY_MET</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+		<Row>
+			<RequirementId>TIME_DEFEAT_GAME_IS_SP</RequirementId>
+			<RequirementType>REQUIREMENT_GAME_IS_MULTIPLAYER</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+	</Requirements>
+	<RequirementArguments>
+		<Row>
+			<RequirementId>TIME_DEFEAT_NOBODY_SCORE_VICTORY</RequirementId>
+			<Name>CollectionType</Name>
+			<Value>COLLECTION_MAJOR_PLAYERS</Value>
+		</Row>
+		<Row>
+			<RequirementId>TIME_DEFEAT_NOBODY_SCORE_VICTORY</RequirementId>
+			<Name>RequirementSetId</Name>
+			<Value>TIME_DEFEAT_PLAYER_EXCEEDS_SCORE_THRESHOLD</Value>
+		</Row>
+	</RequirementArguments>
+	<!-- Updated Score Victory -->
+	<!-- Behaves differently depending on whether in SP or MP -->
+	<RequirementSets>
+		<Delete RequirementSetId="REQUIREMENTS_SCORE_VICTORY"/>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_GAME_MODE</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_SP</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_MP</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY</RequirementSetId>
+			<RequirementId>VICTORY_SCORE_REQUIRES_MAX_TURN_REACHED</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY</RequirementSetId>
+			<RequirementId>SCORE_VICTORY_GAME_MODE_REQUIREMENT_MET</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_GAME_MODE</RequirementSetId>
+			<RequirementId>SCORE_VICTORY_FOR_SP</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_GAME_MODE</RequirementSetId>
+			<RequirementId>SCORE_VICTORY_FOR_MP</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_SP</RequirementSetId>
+			<RequirementId>VICTORY_SCORE_PLAYER_EXCEEDS_SCORE_THRESHOLD</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_SP</RequirementSetId>
+			<RequirementId>GAME_IS_SP</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_MP</RequirementSetId>
+			<RequirementId>VICTORY_SCORE_TEAM_HAS_HIGHEST_SCORE</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_SCORE_VICTORY_FOR_MP</RequirementSetId>
+			<RequirementId>GAME_IS_MP</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row>
+			<RequirementId>SCORE_VICTORY_GAME_MODE_REQUIREMENT_MET</RequirementId>
+			<RequirementType>REQUIREMENT_REQUIREMENTSET_IS_MET</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>SCORE_VICTORY_FOR_SP</RequirementId>
+			<RequirementType>REQUIREMENT_REQUIREMENTSET_IS_MET</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>SCORE_VICTORY_FOR_MP</RequirementId>
+			<RequirementType>REQUIREMENT_REQUIREMENTSET_IS_MET</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>VICTORY_SCORE_PLAYER_EXCEEDS_SCORE_THRESHOLD</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_MEETS_SCORE_THRESHOLD</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>GAME_IS_SP</RequirementId>
+			<RequirementType>REQUIREMENT_GAME_IS_MULTIPLAYER</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+		<Row>
+			<RequirementId>GAME_IS_MP</RequirementId>
+			<RequirementType>REQUIREMENT_GAME_IS_MULTIPLAYER</RequirementType>
+		</Row>
+	</Requirements>
+	<RequirementArguments>
+		<Row>
+			<RequirementId>SCORE_VICTORY_GAME_MODE_REQUIREMENT_MET</RequirementId>
+			<Name>RequirementSetId</Name>
+			<Value>REQUIREMENTS_SCORE_VICTORY_FOR_GAME_MODE</Value>
+		</Row>
+		<Row>
+			<RequirementId>SCORE_VICTORY_FOR_SP</RequirementId>
+			<Name>RequirementSetId</Name>
+			<Value>REQUIREMENTS_SCORE_VICTORY_FOR_SP</Value>
+		</Row>
+		<Row>
+			<RequirementId>SCORE_VICTORY_FOR_MP</RequirementId>
+			<Name>RequirementSetId</Name>
+			<Value>REQUIREMENTS_SCORE_VICTORY_FOR_MP</Value>
+		</Row>
+		<Row>
+			<RequirementId>VICTORY_SCORE_PLAYER_EXCEEDS_SCORE_THRESHOLD</RequirementId>
+			<Name>ScoreLowestDifficulty</Name>
+			<Value>2250</Value>
+		</Row>
+		<Row>
+			<RequirementId>VICTORY_SCORE_PLAYER_EXCEEDS_SCORE_THRESHOLD</RequirementId>
+			<Name>IncrementPerDifficulty</Name>
+			<Value>250</Value>
+		</Row>
+		<Row>
+			<RequirementId>VICTORY_SCORE_PLAYER_EXCEEDS_SCORE_THRESHOLD</RequirementId>
+			<Name>ExtraIncrementHighestDifficulty</Name>
+			<Value>0</Value>
+		</Row>
+	</RequirementArguments>
+</GameInfo>

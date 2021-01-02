@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NationalMonuments -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/24/2018 3:03:44 AM -->
+<GameInfo>
+	
+	<Types>
+		<Row Type="POLICY_NATIONAL_MONUMENTS" Kind="KIND_POLICY"/>
+	</Types>
+
+	<Policies>
+		<Row PolicyType="POLICY_NATIONAL_MONUMENTS" Name="LOC_POLICY_NATIONAL_MONUMENTS_NAME" Description="LOC_POLICY_NATIONAL_MONUMENTS_DESCRIPTION" PrereqCivic="CIVIC_CONSERVATION" GovernmentSlotType="SLOT_ECONOMIC"/>
+	</Policies>
+
+	<PolicyModifiers>
+		<Row>
+			<PolicyType>POLICY_NATIONAL_MONUMENTS</PolicyType>
+			<ModifierId>POLICY_NATIONAL_MONUMENTS_APPEAL_BONUS</ModifierId>
+		</Row>
+	</PolicyModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>POLICY_NATIONAL_MONUMENTS_APPEAL_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_APPEAL</ModifierType>
+			<SubjectRequirementSetId>CITY_HAS_NATIONAL_PARK_REQUREMENTS</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	
+	<ModifierArguments>
+		<Row>
+			<ModifierId>POLICY_NATIONAL_MONUMENTS_APPEAL_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+	</ModifierArguments>
+	
+	<!-- ui/icons_policies.xml -->
+	<IconDefinitions>
+		<Row Name="ICON_POLICY_NATIONAL_MONUMENTS" Atlas="ICON_ATLAS_POLICIES" Index="0"/>
+
+		<Row Name="ICON_POLICY_NATIONAL_MONUMENTS_FOW" Atlas="ICON_ATLAS_POLICIES_FOW" Index="64"/>
+	</IconDefinitions>
+	
+</GameInfo>

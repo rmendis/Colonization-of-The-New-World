@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- WorldRankings_Text -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 2/3/2018 2:14:38 PM -->
+<GameData>
+	<FrontendText>
+		<Row Tag="LOC_SCENARIO_NEW_WORLD_DIFFICULTY">
+			<Text>Difficulty: {1_DifficultyName}</Text>
+		</Row>
+		<Row Tag="LOC_SCENARIO_NEW_WORLD_SINGLE_PLAYER_SCORE">
+			<Text>Required Score for Victory: {1_Score}</Text>
+		</Row>
+		<Row Tag="LOC_SCENARIO_NEW_WORLD_CURRENT_GAME_DIFFICULTY">
+			<Text>Current game: {1_Difficulty}</Text>
+		</Row>
+
+		<Row Tag="LOC_SCENARIO_NEW_WORLD_TITLE">
+			<Text>THE NEW WORLD</Text>
+		</Row>
+		<Row Tag="LOC_SCENARIO_NEW_WORLD_EFFECTS">
+			<Text>The New World is a vast beautiful pristine natural wilderness.[NEWLINE]You score victory points for preserving that beautiy and cultural heritage. Specifically:[NEWLINE]1. Environment: 5VP for each unimproved rainforest, forest and marsh tile.[NEWLINE]2. Monuments: 50VP for each National Park.[NEWLINE]3. Archaeology: 100VP for each artifact excavated from archaeology.</Text>
+		</Row>
+	</FrontendText>
+</GameData>

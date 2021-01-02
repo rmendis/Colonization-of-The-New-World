@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ColossalHead -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/24/2018 9:02:45 PM -->
+<GameInfo>
+	<Improvement_ValidFeatures>
+		<Row ImprovementType="IMPROVEMENT_COLOSSAL_HEAD" FeatureType="FEATURE_FOREST"/>
+		<Row ImprovementType="IMPROVEMENT_COLOSSAL_HEAD" FeatureType="FEATURE_JUNGLE"/>
+	</Improvement_ValidFeatures>
+</GameInfo>
