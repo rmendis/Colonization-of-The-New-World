@@ -6,9 +6,10 @@
 	<Types>
 		<!-- Victories -->
 		<Delete Type="VICTORY_DEFAULT"/>
-		<Delete Type="VICTORY_CUTLURE"/>
+		<Delete Type="VICTORY_CULTURE"/>
 		<Delete Type="VICTORY_RELIGIOUS"/>
 		<Delete Type="VICTORY_TECHNOLOGY"/>
+		<Delete Type="VICTORY_CONQUEST"/>
 	</Types>
 
 	<!-- Disable 'Just One More Turn'-->
@@ -23,7 +24,7 @@
 		</Update>
 	</Victories>
 
-	<!-- Disable all victories except score and culture. -->
+	<!-- Disable all victories except score -->
 	<Victories>
 		<!-- Set all victories to not be enabled by default -->
 		<Update>
