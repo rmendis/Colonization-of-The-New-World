@@ -10,6 +10,7 @@
 		<Delete Type="CIVILIZATION_BRUSSELS"/>
 		<Delete Type="CIVILIZATION_CARTHAGE"/>
 		<Delete Type="CIVILIZATION_GENEVA"/>
+		<Delete Type="CIVILIZATION_GENOA"/>
 		<Delete Type="CIVILIZATION_HATTUSA"/>
 		<Delete Type="CIVILIZATION_HONG_KONG"/>
 		<Delete Type="CIVILIZATION_JAKARTA"/>
