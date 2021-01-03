@@ -7,7 +7,7 @@
     <ProjectGuid>615dc569-41ce-4289-9457-7c0aa2718615</ProjectGuid>
     <ModVersion>14</ModVersion>
     <Teaser>A scenario inspired by the Civ V scenario Conquest of The New World.</Teaser>
-    <Description>A TSL scenario inspired by the Conquest of The New World in Civ.[NEWLINE]6 civs:[NEWLINE]England[NEWLINE]France[NEWLINE]Spain[NEWLINE]America[NEWLINE]The Aztecs[NEWLINE]Brazil</Description>
+    <Description>A scenario inspired by the Conquest of The New World in Civ V.[NEWLINE]6 civs compete for The New World:[NEWLINE]England[NEWLINE]France[NEWLINE]Spain[NEWLINE]America[NEWLINE]The Aztecs[NEWLINE]Brazil</Description>
     <Authors>blkbutterfly74</Authors>
     <SpecialThanks>
     </SpecialThanks>
@@ -18,16 +18,14 @@
     <AssemblyName>Colonization of The New World</AssemblyName>
     <RootNamespace>Colonization of The New World</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>XML/NewWorld_Text.xml</File></UpdateText><UpdateDatabase id="UpdateScenarioConfig"><File>XML/Scenario_Config.xml</File></UpdateDatabase></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><ImportFiles id="ImportMap"><File>Maps/NewWorld.lua</File></ImportFiles><UpdateDatabase id="UpdateScenario"><Properties><criteria>NewWorldScenario</criteria></Properties><File>XML/NationalMonuments.xml</File><File>XML/Naturalist.xml</File><File>XML/ColossalHead.xml</File><File>XML/Scoring.xml</File><File>XML/Archaeologist.xml</File><File>XML/Victories.xml</File><File>XML/NewWorld.xml</File></UpdateDatabase><UpdateText id="UpdateScenarioText"><Properties><criteria>NewWorldScenario</criteria></Properties><File>XML/NationalMonuments_Text.xml</File><File>XML/Scoring_Text.xml</File><File>XML/NewWorld_Text.xml</File></UpdateText><AddGameplayScripts id="AddScenarioScript"><Properties><criteria>NewWorldScenario</criteria></Properties><File>Scripts/NewWorldScenario.lua</File></AddGameplayScripts><UpdateText id="UpdateWorldRankingsText"><Properties><criteria>NewWorldScenario</criteria></Properties><File>UI/WorldRankings_Text.xml</File></UpdateText><ImportFiles id="ImportWorldRankingsUI"><Properties><criteria>NewWorldScenario</criteria></Properties><File>UI/WorldRankings.lua</File><File>UI/WorldRankings.xml</File></ImportFiles><ImportFiles id="ImportScripts"><File>Scripts/AssignTrueStartingPlots.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateScenario"><Properties><LoadOrder>100</LoadOrder></Properties><Criteria>NewWorldScenario</Criteria><File>XML/NationalMonuments.xml</File><File>XML/Naturalist.xml</File><File>XML/ColossalHead.xml</File><File>XML/Scoring.xml</File><File>XML/Archaeologist.xml</File><File>XML/Victories.xml</File><File priority="1">XML/NewWorld.xml</File></UpdateDatabase><UpdateText id="UpdateScenarioText"><Criteria>NewWorldScenario</Criteria><File>XML/NationalMonuments_Text.xml</File><File>XML/Scoring_Text.xml</File><File>XML/NewWorld_Text.xml</File><File>UI/WorldRankings_Text.xml</File></UpdateText><AddGameplayScripts id="AddScenarioScript"><Criteria>NewWorldScenario</Criteria><File>Scripts/NewWorldScenario.lua</File></AddGameplayScripts><ImportFiles id="ImportWorldRankingsUI"><Criteria>NewWorldScenario</Criteria><File>UI/WorldRankings.xml</File></ImportFiles><ImportFiles id="ImportScripts"><Criteria>NewWorldScenario</Criteria><File>Scripts/AssignTrueStartingPlots.lua</File></ImportFiles><ReplaceUIScript id="ReplaceWorldRankingsUI"><Properties><LuaContext>WorldRankings</LuaContext><LuaReplace>UI/WorldRankings.lua</LuaReplace></Properties><Criteria>NewWorldScenario</Criteria><File>UI/WorldRankings.lua</File></ReplaceUIScript><ImportFiles id="ImportMap"><Criteria>NewWorldScenario</Criteria><File>Maps/NewWorld.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
     <AssociationData><![CDATA[<Associations>
-  <Reference type="Mod" title="TCS South American City-States" id="a3698d9f-cbf2-4e31-b045-d6aca1f0dbf0" />
-  <Reference type="Mod" title="CIVITAS North American City-States" id="f21cb4a7-0630-4900-ac67-212d9e7012ad" />
   <Dependency type="Dlc" title="DLC: Aztec Civilization Pack" id="02A8BDDE-67EA-4D38-9540-26E685E3156E" />
 </Associations>]]></AssociationData>
     <ModProperties>
       <CustomProperties />
     </ModProperties>
-    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="NewWorldScenario"><RuleSetInUse><RulesetType>RULESET_SCENARIO_NEW_WORLD</RulesetType></RuleSetInUse></Criteria></ActionCriteria>]]></ActionCriteriaData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="NewWorldScenario"><RuleSetInUse>RULESET_SCENARIO_NEW_WORLD</RuleSetInUse></Criteria></ActionCriteria>]]></ActionCriteriaData>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
