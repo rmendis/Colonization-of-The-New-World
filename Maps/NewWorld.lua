@@ -13,8 +13,6 @@ include "FeatureGenerator"
 include "TerrainGenerator"
 include "NaturalWonderGenerator"
 include "ResourceGenerator"
-include "AssignStartingPlots"
-
 include "AssignTrueStartingPlots"
 
 -- north pole
@@ -420,34 +418,15 @@ function GenerateMap()
 	}
 	local resGen = ResourceGenerator.Create(args);
 
-	local bTrueStart = true;
+	print("Setting true start locations.");
 
-	if (bTrueStart) then
-		print("Setting true start locations.");
-
-		local args = {
-			TRUE_START_LOCATIONS = g_TSLs,
-			CENTER_X = g_CenterX,
-			CENTER_Y = g_CenterY,
-			WIDTH = g_iW,
-		};
-		local true_start_locations = AssignTrueStartingPlots.Create(args);
-	else
-		print("Creating start plot database.");
-
-		-- START_MIN_Y and START_MAX_Y is the percent of the map ignored for major civs' starting positions.
-		local startConfig = MapConfiguration.GetValue("start");-- Get the start config
-		local args = {
-			MIN_MAJOR_CIV_FERTILITY = 150,
-			MIN_MINOR_CIV_FERTILITY = 50, 
-			MIN_BARBARIAN_FERTILITY = 1,
-			START_MIN_Y = 15,
-			START_MAX_Y = 15,
-			START_CONFIG = startConfig,
-			WATER = true,
-		};
-		local start_plot_database = AssignStartingPlots.Create(args)
-	end
+	local args = {
+		TRUE_START_LOCATIONS = g_TSLs,
+		CENTER_X = g_CenterX,
+		CENTER_Y = g_CenterY,
+		WIDTH = g_iW,
+	};
+	local true_start_locations = AssignTrueStartingPlots.Create(args);
 
 	local GoodyGen = AddGoodies(g_iW, g_iH);
 end
