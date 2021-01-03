@@ -4,12 +4,21 @@
 <!-- DateCreated: 1/24/2018 9:30:32 PM -->
 <GameData>
 	<BaseGameText>
+
+		<Row Tag="LOC_CATEGORY_ENVIRONMENT_NAME">
+			<Text>Environment</Text>
+		</Row>
 		<Row Tag="LOC_LINE_ITEM_ENVIRONMENT_NAME">
 			<Text>Environment</Text>
 		</Row>
+		
+		<Row Tag="LOC_CATEGORY_MONUMENTS_NAME">
+			<Text>Monuments</Text>
+		</Row>	
 		<Row Tag="LOC_LINE_ITEM_MONUMENTS_NAME">
 			<Text>Monuments</Text>
 		</Row>
+		
 		<Row Tag="LOC_LINE_ITEM_ARCHAEOLOGY_NAME">
 			<Text>Archaeology</Text>
 		</Row>

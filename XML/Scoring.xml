@@ -6,9 +6,9 @@
 	<Types>
 		<Row Type="LINE_ITEM_ENVIRONMENT" Kind="KIND_SCORING_LINE_ITEM"/>
 		<Row Type="LINE_ITEM_MONUMENTS" Kind="KIND_SCORING_LINE_ITEM"/>
-		<Row Type="LINE_ITEM_ARCHAEOLOGY" Kind="KIND_SCORING_LINE_ITEM"/>
-
+<!--	<Row Type="LINE_ITEM_ARCHAEOLOGY" Kind="KIND_SCORING_LINE_ITEM"/> -->
 	</Types>
+	
 	<ScoringCategories>
 		<Update>
 			<Where CategoryType="CATEGORY_EMPIRE"/>
@@ -50,16 +50,17 @@
 			<Where CategoryType="CATEGORY_SCENARIO1"/>
 			<Set>
 				<Multiplier>1</Multiplier>
-				<Name>LOC_LINE_ITEM_ENVIRONMENT_NAME</Name>
+				<Name>LOC_CATEGORY_ENVIRONMENT_NAME</Name>
 			</Set>
 		</Update>
 		<Update>
 			<Where CategoryType="CATEGORY_SCENARIO2"/>
 			<Set>
 				<Multiplier>1</Multiplier>
-				<Name>LOC_LINE_ITEM_MONUMENTS_NAME</Name>
+				<Name>LOC_CATEGORY_MONUMENTS_NAME</Name>
 			</Set>
 		</Update>
+		<!--
 		<Update>
 			<Where CategoryType="CATEGORY_SCENARIO3"/>
 			<Set>
@@ -67,7 +68,9 @@
 				<Name>LOC_LINE_ITEM_ARCHAEOLOGY_NAME</Name>
 			</Set>
 		</Update>
+		-->
 	</ScoringCategories>
+	
 	<ScoringLineItems>
 		<Update>
 			<Where LineItemType="LINE_ITEM_POPULATION"/>
@@ -88,6 +91,30 @@
 			</Set>
 		</Update>
 		<Update>
+			<Where LineItemType="LINE_ITEM_GREAT_PEOPLE"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+			</Set>
+		</Update>
+		<Update>
+			<Where LineItemType="LINE_ITEM_RELIGION"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+			</Set>
+		</Update>
+		<Update>
+			<Where LineItemType="LINE_ITEM_TECHS"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+			</Set>
+		</Update>
+		<Update>
+			<Where LineItemType="LINE_ITEM_WONDERS"/>
+			<Set>
+				<Multiplier>0</Multiplier>
+			</Set>
+		</Update>
+		<Update>
 			<Where LineItemType="LINE_ITEM_CIVICS"/>
 			<Set>
 				<Multiplier>0</Multiplier>
@@ -96,6 +123,6 @@
 		</Update>
 		<Row LineItemType="LINE_ITEM_ENVIRONMENT" Name="LOC_LINE_ITEM_ENVIRONMENT_NAME" Category="CATEGORY_SCENARIO1" Multiplier="1" ScoringScenario1="true" TieBreakerPriority="100"/>
 		<Row LineItemType="LINE_ITEM_MONUMENTS" Name="LOC_LINE_ITEM_MONUMENTS_NAME" Category="CATEGORY_SCENARIO2" Multiplier="1" ScoringScenario2="true" TieBreakerPriority="95"/>
-		<Row LineItemType="LINE_ITEM_ARCHAEOLOGY" Name="LOC_LINE_ITEM_ARCHAEOLOGY_NAME" Category="CATEGORY_SCENARIO3" Multiplier="1" ScoringScenario3="true" TieBreakerPriority="91"/>
+<!--	<Row LineItemType="LINE_ITEM_ARCHAEOLOGY" Name="LOC_LINE_ITEM_ARCHAEOLOGY_NAME" Category="CATEGORY_SCENARIO3" Multiplier="1" ScoringScenario3="true" TieBreakerPriority="91"/> -->
 	</ScoringLineItems>
 </GameInfo>

@@ -56,6 +56,7 @@ Events.NationalParkAdded.Add(OnNationalParkAdded);
 
 --------------------------------------------------------------
 
+--[[
 function OnGreatWorkCreated(playerID, creatorID, cityX, cityY, buildingID, iGreatWorkIndex)
 
 	print("Great Work added ".. playerID);
@@ -65,3 +66,4 @@ function OnGreatWorkCreated(playerID, creatorID, cityX, cityY, buildingID, iGrea
 	pPlayer:SetScoringScenario3(score + 100);		-- artifacts = 100 VP
 end
 Events.GreatWorkCreated.Add(OnGreatWorkCreated);
+--]]
