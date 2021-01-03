@@ -39,7 +39,7 @@
 		<Row Domain="NewWorldScenario_Maps" File="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" Name="LOC_MAP_NEW_WORLD_NAME" Description="LOC_MAP_NEW_WORLD_DESCRIPTION"/>
 	</Maps>
 	<MapSizes>
-		<Row Domain="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" MapSizeType="MAPSIZE_SMALL" Name="LOC_MAPSIZE_SMALL_NAME" Description="LOC_MAPSIZE_SMALL_DESCRIPTION" MinPlayers="6" MaxPlayers="6" DefaultPlayers="6" MinCityStates="6" MaxCityStates="9" DefaultCityStates="6" SortIndex="10"/>
+		<Row Domain="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" MapSizeType="MAPSIZE_SMALL" Name="LOC_MAPSIZE_SMALL_NAME" Description="LOC_MAPSIZE_SMALL_DESCRIPTION" MinPlayers="6" MaxPlayers="6" DefaultPlayers="6" MinCityStates="0" MaxCityStates="3" DefaultCityStates="3" SortIndex="10"/>
 	</MapSizes>
 	<MapDomainOverrides>
 		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" ParameterId="MapSize" Domain="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua"/>
