@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Conquistador -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/4/2021 2:21:54 PM -->
+<GameInfo>
+
+	<!-- can settle like in Civ V -->
+	<Units>
+		<Update>
+			<Where UnitType="UNIT_SPANISH_CONQUISTADOR"/>
+			<Set FoundCity="1" />
+		</Update>
+	</Units>
+
+
+</GameInfo>

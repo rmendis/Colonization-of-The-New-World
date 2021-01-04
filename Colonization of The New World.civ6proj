@@ -5,7 +5,7 @@
     <Name>Scenario: Colonization of The New World</Name>
     <Guid>d9e33a39-e54b-4cf8-8204-01c2f1d7fe07</Guid>
     <ProjectGuid>615dc569-41ce-4289-9457-7c0aa2718615</ProjectGuid>
-    <ModVersion>14</ModVersion>
+    <ModVersion>15</ModVersion>
     <Teaser>A scenario inspired by the Civ V scenario Conquest of The New World.</Teaser>
     <Description>A scenario inspired by the Conquest of The New World in Civ V.[NEWLINE]6 civs compete for The New World:[NEWLINE]England[NEWLINE]France[NEWLINE]Spain[NEWLINE]America[NEWLINE]The Aztecs[NEWLINE]Brazil</Description>
     <Authors>blkbutterfly74</Authors>
@@ -18,7 +18,7 @@
     <AssemblyName>Colonization of The New World</AssemblyName>
     <RootNamespace>Colonization of The New World</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>XML/NewWorld_Text.xml</File></UpdateText><UpdateDatabase id="UpdateScenarioConfig"><File>XML/Scenario_Config.xml</File></UpdateDatabase></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateScenario"><Properties><LoadOrder>100</LoadOrder></Properties><Criteria>NewWorldScenario</Criteria><File>XML/NationalMonuments.xml</File><File>XML/Naturalist.xml</File><File>XML/ColossalHead.xml</File><File>XML/Scoring.xml</File><File>XML/Victories.xml</File><File priority="1">XML/NewWorld.xml</File></UpdateDatabase><UpdateText id="UpdateScenarioText"><Criteria>NewWorldScenario</Criteria><File>XML/NationalMonuments_Text.xml</File><File>XML/Scoring_Text.xml</File><File>XML/NewWorld_Text.xml</File></UpdateText><AddGameplayScripts id="AddScenarioScript"><Criteria>NewWorldScenario</Criteria><File>Scripts/NewWorldScenario.lua</File></AddGameplayScripts><ImportFiles id="ImportScripts"><Criteria>NewWorldScenario</Criteria><File>Scripts/AssignTrueStartingPlots.lua</File></ImportFiles><ImportFiles id="ImportMap"><Criteria>NewWorldScenario</Criteria><File>Maps/NewWorld.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateScenario"><Properties><LoadOrder>100</LoadOrder></Properties><Criteria>NewWorldScenario</Criteria><File>XML/NationalMonuments.xml</File><File>XML/Naturalist.xml</File><File>XML/ColossalHead.xml</File><File>XML/Scoring.xml</File><File>XML/Victories.xml</File><File priority="1">XML/NewWorld.xml</File><File>XML/Conquistador.xml</File></UpdateDatabase><UpdateText id="UpdateScenarioText"><Criteria>NewWorldScenario</Criteria><File>XML/NationalMonuments_Text.xml</File><File>XML/Scoring_Text.xml</File><File>XML/NewWorld_Text.xml</File></UpdateText><AddGameplayScripts id="AddScenarioScript"><Criteria>NewWorldScenario</Criteria><File>Scripts/NewWorldScenario.lua</File></AddGameplayScripts><ImportFiles id="ImportScripts"><Criteria>NewWorldScenario</Criteria><File>Scripts/AssignTrueStartingPlots.lua</File></ImportFiles><ImportFiles id="ImportMap"><Criteria>NewWorldScenario</Criteria><File>Maps/NewWorld.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
     <AssociationData><![CDATA[<Associations>
   <Dependency type="Dlc" title="DLC: Aztec Civilization Pack" id="02A8BDDE-67EA-4D38-9540-26E685E3156E" />
 </Associations>]]></AssociationData>
@@ -57,6 +57,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="XML\ColossalHead.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="XML\Conquistador.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="XML\NationalMonuments.xml">

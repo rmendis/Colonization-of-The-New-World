@@ -14,7 +14,7 @@
 			<ScenarioSetupPortraitBackground>LEADER_T_ROOSEVELT_BACKGROUND</ScenarioSetupPortraitBackground>
 			<RequiresNoTeams>1</RequiresNoTeams>
 			<RequiresUniqueLeaders>1</RequiresUniqueLeaders>
-			<MaxTurns>165</MaxTurns>
+			<MaxTurns>175</MaxTurns>
 			<FixedMaxTurns>1</FixedMaxTurns>
 			<IsScenario>1</IsScenario>
 		</Row>
