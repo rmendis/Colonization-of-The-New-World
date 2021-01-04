@@ -33,7 +33,7 @@ local function OnGameTurnStarted( player )
 
 					if (pPlayer:IsAlive() == true and pPlayer:IsMajor() == true) then
 						local score = pPlayer:GetScoringScenario1();
-						pPlayer:SetScoringScenario1(score + 5);		-- 5VP each
+						pPlayer:SetScoringScenario1(score + 10);		-- 10VP each
 					end
 				end
 			end
@@ -50,7 +50,7 @@ local function OnNationalParkAdded(ePlayer, arg1, arg2)
 	local pPlayer = Players[ePlayer];
 
 	local score = pPlayer:GetScoringScenario2();
-	pPlayer:SetScoringScenario2(score + 50);		-- national parks = 50 VP
+	pPlayer:SetScoringScenario2(score + 100);		-- national parks = 100 VP
 end
 Events.NationalParkAdded.Add(OnNationalParkAdded);
 
