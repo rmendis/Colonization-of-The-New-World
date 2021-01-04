@@ -13,10 +13,10 @@
 		</Row>
 		
 		<Row Tag="LOC_CATEGORY_MONUMENTS_NAME">
-			<Text>Monuments</Text>
+			<Text>National Parks</Text>
 		</Row>	
 		<Row Tag="LOC_LINE_ITEM_MONUMENTS_NAME">
-			<Text>Monuments</Text>
+			<Text>National Parks</Text>
 		</Row>
 		
 		<Row Tag="LOC_LINE_ITEM_ARCHAEOLOGY_NAME">
