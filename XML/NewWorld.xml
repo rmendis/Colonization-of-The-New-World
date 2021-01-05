@@ -27,7 +27,12 @@
 		<Delete Type="CIVILIZATION_VILNIUS"/>
 		<Delete Type="CIVILIZATION_YEREVAN"/>
 		<Delete Type="CIVILIZATION_ZANZIBAR"/>
-		
+		<Delete Type="CIVILIZATION_SINGAPORE"/>
+		<Delete Type="CIVILIZATION_VATICAN_CITY"/>
+		<Delete Type="CIVILIZATION_TARUGA"/>
+		<Delete Type="CIVILIZATION_HUNZA"/>
+		<Delete Type="CIVILIZATION_LAHORE"/>
+
 		<!-- Religions -->
 		<Delete Type="RELIGION_BUDDHISM" Kind="KIND_RELIGION"/>
 		<Delete Type="RELIGION_CONFUCIANISM" Kind="KIND_RELIGION"/>
