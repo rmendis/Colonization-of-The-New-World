@@ -33,7 +33,7 @@ local function OnGameTurnStarted( player )
 
 					if (pPlayer:IsAlive() == true and pPlayer:IsMajor() == true) then
 						local score = pPlayer:GetScoringScenario1();
-						pPlayer:SetScoringScenario1(score + 10);		-- 10VP each
+						pPlayer:SetScoringScenario1(score + 1);
 					end
 				end
 			end
