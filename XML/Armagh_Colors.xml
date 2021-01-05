@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<PlayerColors>
+		<Row>
+			<Type>CIVILIZATION_ARMAGH</Type>
+			<Usage>Minor</Usage>
+			<PrimaryColor>COLOR_PLAYER_CITY_STATE_PRIMARY</PrimaryColor>
+			<SecondaryColor>COLOR_PLAYER_CITY_STATE_RELIGIOUS_SECONDARY</SecondaryColor>
+		</Row>
+	</PlayerColors>
+</GameInfo>

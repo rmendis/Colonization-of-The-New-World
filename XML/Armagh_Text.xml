@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<EnglishText>
+		<Row Tag="LOC_CIVILIZATION_ARMAGH_NAME">
+			<Text>Armagh</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_ARMAGH_DESCRIPTION">
+			<Text>Armagh city-state</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_ARMAGH_ADJECTIVE">
+			<Text>Armagh</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_ARMAGH">
+			<Text>Armagh</Text>
+		</Row>
+		<Row Tag="LOC_LEADER_TRAIT_ARMAGH_NAME">
+			<Text>Armagh Suzerain Bonus</Text>
+		</Row>
+		<Row Tag="LOC_LEADER_TRAIT_ARMAGH_DESCRIPTION">
+			<Text>Your Builders can now make Monastery improvements.[NEWLINE][NEWLINE]Monasteries provide +2 [ICON_Faith] Faith. +15 HP healing for friendly religious unit on this tile that has not attacked this turn. Cannot be built next to another Monastery</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_MONASTERY_NAME">
+			<Text>Monastery</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_MONASTERY_DESCRIPTION">
+			<Text>Unlocks the Builder ability to construct a Monastery.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. +15 HP healing for friendly religious unit on this tile that has not attacked this turn. Cannot be built next to another Monastery.</Text>
+		</Row>
+
+		<!-- civilopedia -->
+		<Row Tag="LOC_PEDIA_CITYSTATES_PAGE_CIVILIZATION_ARMAGH_CHAPTER_HISTORY_PARA_1">
+			<Text>The Irish town of Armagh has long known religion. Thought to have been a worship site for ancient pagans, it gained prominence in the 5th Century when Saint Patrick, a Christian missionary, constructed and consecrated a stone church on the summit of a hill. Around that sprang a monastery, and then a town devoted to spreading  Christianity throughout Ireland—a beachhead of theology.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CITYSTATES_PAGE_CIVILIZATION_ARMAGH_CHAPTER_HISTORY_PARA_2">
+			<Text>This is not to imply that Armagh is a coastal city. Its location in Northern Ireland is a short 25 miles to the ocean. Nevertheless, its reputation as the seat of the Church of Ireland made it a tempting target for those looking to score riches. Vikings raided Armagh's monastery twice in the 9th Century, each time making the overland trek to abscond with armloads of religious relics. John de Courcy, an invading Norman knight, thought to repeat the tradition when he plundered the town in the late 12th Century.</Text>
+		</Row>
+	</EnglishText>
+</GameData>
