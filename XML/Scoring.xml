@@ -103,7 +103,7 @@
 				<TieBreakerPriority>95</TieBreakerPriority>
 			</Set>
 		</Update>
-		<Row LineItemType="LINE_ITEM_ENVIRONMENT" Name="LOC_LINE_ITEM_ENVIRONMENT_NAME" Category="CATEGORY_SCENARIO1" Multiplier="1" ScoringScenario1="true" TieBreakerPriority="99"/>
+		<Row LineItemType="LINE_ITEM_ENVIRONMENT" Name="LOC_LINE_ITEM_ENVIRONMENT_NAME" Category="CATEGORY_SCENARIO1" Multiplier="10" ScoringScenario1="true" TieBreakerPriority="99"/>
 		<Row LineItemType="LINE_ITEM_MONUMENTS" Name="LOC_LINE_ITEM_MONUMENTS_NAME" Category="CATEGORY_SCENARIO2" Multiplier="100" ScoringScenario2="true" TieBreakerPriority="100"/>
 <!--	<Row LineItemType="LINE_ITEM_ARCHAEOLOGY" Name="LOC_LINE_ITEM_ARCHAEOLOGY_NAME" Category="CATEGORY_SCENARIO3" Multiplier="1" ScoringScenario3="true" TieBreakerPriority="100"/> -->
 	</ScoringLineItems>
