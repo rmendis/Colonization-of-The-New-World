@@ -49,8 +49,9 @@ local function OnNationalParkAdded(ePlayer, arg1, arg2)
 
 	local pPlayer = Players[ePlayer];
 
+	-- increment national parks count
 	local score = pPlayer:GetScoringScenario2();
-	pPlayer:SetScoringScenario2(score + 100);		-- national parks = 100 VP
+	pPlayer:SetScoringScenario2(score + 1);
 end
 Events.NationalParkAdded.Add(OnNationalParkAdded);
 
