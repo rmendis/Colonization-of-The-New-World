@@ -7,7 +7,7 @@
     <ProjectGuid>615dc569-41ce-4289-9457-7c0aa2718615</ProjectGuid>
     <ModVersion>17</ModVersion>
     <Teaser>A scenario inspired by the Civ V scenario Conquest of The New World.</Teaser>
-    <Description>A scenario inspired by the Conquest of The New World in Civ V.[NEWLINE]6 civs compete for The New World:[NEWLINE]England[NEWLINE]France[NEWLINE]Spain[NEWLINE]America[NEWLINE]The Aztecs[NEWLINE]Brazil[NEWLINE][NEWLINE]Supports New Frontier Pass persona packs for Teddy and Catherine.</Description>
+    <Description>A scenario inspired by the Conquest of The New World in Civ V.[NEWLINE]8 civs compete for The New World:[NEWLINE]England[NEWLINE]France[NEWLINE]Spain[NEWLINE]America[NEWLINE]The Aztecs[NEWLINE]Brazil[NEWLINE]The Maya[NEWLINE]Gran Colombia[NEWLINE][NEWLINE]Supports New Frontier Pass persona packs for Teddy and Catherine.</Description>
     <Authors>blkbutterfly74</Authors>
     <SpecialThanks>
     </SpecialThanks>
@@ -24,7 +24,6 @@
   <Reference type="Dlc" title="Catherine De Medici Persona Pack" id="CE5876CD-6900-46D1-9C9C-8DBA1F28872E" />
   <Reference type="Dlc" title="Teddy Roosevelt Persona Pack" id="113D9459-0A3B-4FCB-A49C-483F40303575" />
   <Dependency type="Dlc" title="Gran Colombia &amp; Maya Pack" id="9DE86512-DE1A-400D-8C0A-AB46EBBF76B9" />
-  <Dependency type="Dlc" title="DLC: Vikings Content" id="2F6E858A-28EF-46B3-BEAC-B985E52E9BC1" />
 </Associations>]]></AssociationData>
     <ModProperties>
       <CustomProperties />
