@@ -70,8 +70,9 @@
 		</Update>
 	</Religions>
 
-	<FavouredReligions>
+	<FavoredReligions>
 		<Row LeaderType="LEADER_MONTEZUMA" ReligionType="RELIGION_CUSTOM_1" />
-	</FavouredReligions>
+		<Row LeaderType="LEADER_LADY_SIX_SKY" ReligionType="RELIGION_CUSTOM_1" />
+	</FavoredReligions>
 	
 </GameInfo>
