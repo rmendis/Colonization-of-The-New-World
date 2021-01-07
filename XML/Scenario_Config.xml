@@ -56,17 +56,32 @@
 		<Row ParameterId="StartPosition" ConfigurationGroup="Game" ConfigurationId="RULESET" Operator="NotEquals" ConfigurationValue="RULESET_SCENARIO_NEW_WORLD"/>
 	</ParameterDependencies>
 
-	<MapLeaders>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="RANDOM"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_CATHERINE_DE_MEDICI"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_CATHERINE_DE_MEDICI_ALT"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_MONTEZUMA"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_PEDRO"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_PHILIP_II"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_T_ROOSEVELT"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_VICTORIA"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_LADY_SIX_SKY"/>
-		<Row Map="{D9E33A39-E54B-4CF8-8204-01C2F1D7FE07}Maps/NewWorld.lua" LeaderType="LEADER_SIMON_BOLIVAR"/>
-	</MapLeaders>
+	<!-- excluded players -->
+	<RulesetUnsupportedValues>
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_MVEMBA" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_GILGAMESH" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_TOMYRIS" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_PETER_GREAT" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_TRAJAN" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_JADWIGA" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_CYRUS" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_AMANITORE" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_HARDRADA" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_ALEXANDER" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_JAYAVARMAN" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_HOJO" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_GITARJA" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_GANDHI" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_PERICLES" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_GORGO" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_BARBAROSSA" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_AMBIORIX" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_MENELIK" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_CLEOPATRA" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_QIN" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_BASIL" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_HAMMURABI" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_JOHN_CURTIN" />
+		<Row Ruleset="RULESET_SCENARIO_NEW_WORLD" Domain="Players:StandardPlayers" Value="LEADER_SALADIN" />
+	</RulesetUnsupportedValues>
 </GameInfo>
