@@ -55,6 +55,9 @@
 		<Delete Type="RELIGION_CUSTOM_10" Kind="KIND_RELIGION"/>
 		<Delete Type="RELIGION_CUSTOM_11" Kind="KIND_RELIGION"/>
 		<Delete Type="RELIGION_CUSTOM_12" Kind="KIND_RELIGION"/>
+
+		<!-- prevent AI from building spaceports -->
+		<Delete Type="DISTRICT_SPACEPORT"/>
 	</Types>
 
 	<!-- mesoamerican -->
