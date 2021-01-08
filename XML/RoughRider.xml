@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RoughRider -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 1/8/2021 2:53:31 PM -->
+<GameInfo>
+
+	<!-- better rough rider -->
+	<Units>
+		<Update>
+			<Where UnitType="UNIT_AMERICAN_ROUGH_RIDER"/>
+			<Set ParkCharges="1" />
+		</Update>
+	</Units>
+	
+</GameInfo>
