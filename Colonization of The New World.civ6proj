@@ -24,6 +24,10 @@
   <Reference type="Dlc" title="Catherine De Medici Persona Pack" id="CE5876CD-6900-46D1-9C9C-8DBA1F28872E" />
   <Reference type="Dlc" title="Teddy Roosevelt Persona Pack" id="113D9459-0A3B-4FCB-A49C-483F40303575" />
   <Dependency type="Dlc" title="Gran Colombia &amp; Maya Pack" id="9DE86512-DE1A-400D-8C0A-AB46EBBF76B9" />
+  <Reference type="Dlc" title="DLC: Australia Civilization Pack" id="E3F53C61-371C-440B-96CE-077D318B36C0" />
+  <Reference type="Dlc" title="DLC: Khmer and Indonesia Civilization Pack" id="1F367231-A040-4793-BDBB-088816853683" />
+  <Reference type="Dlc" title="DLC: Nubia Civilization Pack" id="643EA320-8E1A-4CF1-A01C-00D88DDD131A" />
+  <Reference type="Dlc" title="DLC: Persia and Macedon Civilization Pack" id="E2749E9A-8056-45CD-901B-C368C8E83DEB" />
 </Associations>]]></AssociationData>
     <ModProperties>
       <CustomProperties />
