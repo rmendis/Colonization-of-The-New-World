@@ -32,6 +32,7 @@
 		<Delete Type="CIVILIZATION_TARUGA"/>
 		<Delete Type="CIVILIZATION_HUNZA"/>
 		<Delete Type="CIVILIZATION_LAHORE"/>
+		<Delete Type="CIVILIZATION_LISBON"/>
 
 		<!-- Religions -->
 		<Delete Type="RELIGION_BUDDHISM" Kind="KIND_RELIGION"/>
