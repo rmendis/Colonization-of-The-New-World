@@ -10,6 +10,9 @@
 		<Delete Type="VICTORY_RELIGIOUS"/>
 		<Delete Type="VICTORY_TECHNOLOGY"/>
 		<Delete Type="VICTORY_CONQUEST"/>
+
+		<!-- scenario specific victory -->
+		<Row Type="VICTORY_COLONIZATION_SCENARIO" Kind="KIND_VICTORY"/>
 	</Types>
 
 	<!-- Disable 'Just One More Turn'-->
@@ -35,6 +38,7 @@
 			<Where VictoryType="VICTORY_SCORE"/>
 			<Set EnabledByDefault="1"/>
 		</Update>
+		<Row VictoryType="VICTORY_COLONIZATION_SCENARIO" Name="LOC_VICTORY_COLONIZATION_SCENARIO_NAME" Blurb="LOC_VICTORY_COLONIZATION_SCENARIO_TEXT" Description="LOC_VICTORY_COLONIZATION_SCENARIO_DESCRIPTION" RequirementSetId="REQUIREMENTS_COLONIZATION_SCENARIO_VICTORY" CriticalPercentage="10" OneMoreTurn="0"/>
 	</Victories>
 
 	<!-- Time Defeat -->
@@ -94,6 +98,37 @@
 			<RequirementId>TIME_DEFEAT_NOBODY_SCORE_VICTORY</RequirementId>
 			<Name>RequirementSetId</Name>
 			<Value>TIME_DEFEAT_PLAYER_EXCEEDS_SCORE_THRESHOLD</Value>
+		</Row>
+	</RequirementArguments>
+	<!-- Scenario specific victory -->
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_COLONIZATION_SCENARIO_VICTORY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_COLONIZATION_SCENARIO_VICTORY</RequirementSetId>
+			<RequirementId>HAS_20_SANCTUARIES</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row>
+			<RequirementId>HAS_20_SANCTUARIES</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_BUILDINGS</RequirementType>
+		</Row>
+	</Requirements>
+	<RequirementArguments>
+		<Row>
+			<RequirementId>HAS_20_SANCTUARIES</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_SANCTUARY</Value>
+		</Row>
+		<Row>
+			<RequirementId>HAS_20_SANCTUARIES</RequirementId>
+			<Name>Amount</Name>
+			<Value>20</Value>
 		</Row>
 	</RequirementArguments>
 	<!-- Updated Score Victory -->

@@ -18,9 +18,13 @@
 		<Row Tag="LOC_LINE_ITEM_MONUMENTS_NAME">
 			<Text>National Parks</Text>
 		</Row>
+
+		<Row Tag="LOC_CATEGORY_SANCTUARIES_NAME">
+			<Text>Sanctuaries</Text>
+		</Row>
 		
-		<Row Tag="LOC_LINE_ITEM_ARCHAEOLOGY_NAME">
-			<Text>Archaeology</Text>
+		<Row Tag="LOC_LINE_ITEM_SANCTUARIES_NAME">
+			<Text>Sanctuaries</Text>
 		</Row>
 	</BaseGameText>
 </GameData>

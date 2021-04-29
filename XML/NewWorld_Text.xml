@@ -29,7 +29,7 @@
 			<Text>Eco Victory</Text>
 		</Row>
 		<Row Tag="LOC_VICTORY_MONUMENTS_TT">
-			<Text>Build 20 National Parks.</Text>
+			<Text>Build 20 Sanctuaries.</Text>
 		</Row>
 		<!--
 		<Row Tag="LOC_VICTORY_ENVIRONMENT_NAME">
