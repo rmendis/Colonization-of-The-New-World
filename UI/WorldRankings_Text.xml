@@ -3,6 +3,12 @@
 <!-- Author: blkbutterfly74 -->
 <!-- DateCreated: 2/3/2018 2:14:38 PM -->
 <GameData>
+
+	<LocalizedText>
+		<!-- REPLACEMENTS -->
+		<Delete Tag="LOC_WORLD_RANKINGS_SCORE_DETAILS"/>
+	</LocalizedText>
+	
 	<FrontendText>
 		<Row Tag="LOC_SCENARIO_NEW_WORLD_DIFFICULTY">
 			<Text>Difficulty: {1_DifficultyName}</Text>
@@ -17,8 +23,11 @@
 		<Row Tag="LOC_SCENARIO_NEW_WORLD_TITLE">
 			<Text>THE NEW WORLD</Text>
 		</Row>
-		<Row Tag="LOC_SCENARIO_NEW_WORLD_EFFECTS">
-			<Text>The New World is a vast beautiful pristine natural wilderness.[NEWLINE]You score victory points for preserving that beautiy and cultural heritage. Specifically:[NEWLINE]1. Environment: 5VP for each unimproved rainforest, forest and marsh tile.[NEWLINE]2. Monuments: 50VP for each National Park.[NEWLINE]3. Archaeology: 100VP for each artifact excavated from archaeology.</Text>
-		</Row>
 	</FrontendText>
+
+	<EnglishText>
+		<Row Tag="LOC_WORLD_RANKINGS_SCORE_DETAILS">
+			<Text>A [COLOR:NeutralCS]SCORE[ENDCOLOR] victory occurs if no civilization builds 20 Sanctuaries by the end of the game (after 175 turns).[NEWLINE][NEWLINE]You can win a score victory with special Victory Points (VP) awarded in this scenario:[NEWLINE][NEWLINE][ICON_Bullet]100VP for each National Park[NEWLINE][ICON_Bullet]10VP for every unimproved tile of forest, marsh and rain forest in your empire.</Text>
+		</Row>
+	</EnglishText>
 </GameData>

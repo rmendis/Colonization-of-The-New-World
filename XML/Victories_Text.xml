@@ -13,7 +13,7 @@
 		</Row>
 
 		<Row Tag="LOC_VICTORY_COLONIZATION_SCENARIO_DESCRIPTION">
-			<Text>The people of the New World have preserved its pristine beauty and natural perfection.[NEWLINE]Will you also honour that tradition or plunder the New World for its resources?[NEWLINE][NEWLINE]The player who completes 20 Sanctuaries before time expires (125 turns) will triumph over its rivals.[NEWLINE][NEWLINE][NEWLINE]SPECIAL RULES:[NEWLINE]Domination, Culture, Religious and Science victories are disabled.[NEWLINE][NEWLINE]You may win a score victory with special VP:[NEWLINE][NEWLINE][ICON_Bullet]100VP for each National Park[NEWLINE][ICON_Bullet]10VP for every tile of untouched natural environment (forest, marsh and rain forest) in your empire.</Text>
+			<Text>The people of the New World have preserved its pristine beauty and natural perfection.[NEWLINE]Will you also honour that tradition or plunder the New World for its resources?[NEWLINE][NEWLINE]The player who completes 20 Sanctuaries before time expires (125 turns) will triumph over its rivals.[NEWLINE][NEWLINE][NEWLINE]SPECIAL RULES:[NEWLINE]Domination, Culture, Religious and Science victories are disabled.</Text>
 		</Row>
 		
 	</BaseGameText>
