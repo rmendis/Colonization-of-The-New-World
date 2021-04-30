@@ -27,7 +27,7 @@
 
 	<EnglishText>
 		<Row Tag="LOC_WORLD_RANKINGS_SCORE_DETAILS">
-			<Text>A [COLOR:NeutralCS]SCORE[ENDCOLOR] victory occurs if no civilization builds 20 Sanctuaries by the end of the game (after 175 turns).[NEWLINE][NEWLINE]You can win a score victory with special Victory Points (VP) awarded in this scenario:[NEWLINE][NEWLINE][ICON_Bullet]100VP for each National Park[NEWLINE][ICON_Bullet]10VP for every unimproved tile of forest, marsh and rain forest in your empire.</Text>
+			<Text>A [COLOR:NeutralCS]SCORE[ENDCOLOR] victory occurs if no civilization builds 20 Sanctuaries by the end of the game (after 175 turns) and if you pass a certain threshold:[NEWLINE]Settler: 2250[NEWLINE]Chieftain: 2500[NEWLINE]Warlord: 2750[NEWLINE]Prince: 3000[NEWLINE]King:3250 [NEWLINE]Emperor: 3500[NEWLINE]Immortal: 3750[NEWLINE]Diety: 4000[NEWLINE][NEWLINE]The New World is a vast beautiful pristine natural wilderness. You score victory points for preserving that beauty and natural heritage:[NEWLINE][ICON_Bullet]100VP for each National Park[NEWLINE][ICON_Bullet]10VP for every unimproved tile of forest, marsh and rain forest in your empire.</Text>
 		</Row>
 	</EnglishText>
 </GameData>
