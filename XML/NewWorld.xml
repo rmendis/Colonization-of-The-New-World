@@ -79,4 +79,37 @@
 		<Row LeaderType="LEADER_LADY_SIX_SKY" ReligionType="RELIGION_CUSTOM_1" />
 	</FavoredReligions>
 	
+	<!--AI changes-->
+	<AiFavoredItems>
+
+		<!-- Do not prioratise culture, science or religious wins -->
+		<Update>
+			<Where>
+				<ListType>FavorCulturalVictory</ListType>
+			</Where>
+			<Set>
+				<Favored>false</Favored>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<ListType>FavorReligiousVictory</ListType>
+			</Where>
+			<Set>
+				<Favored>false</Favored>
+			</Set>
+		</Update>
+		<Update>
+			<Where>
+				<ListType>FavorScienceVictory</ListType>
+			</Where>
+			<Set>
+				<Favored>false</Favored>
+			</Set>
+		</Update>
+
+		<!-- prioratise preserves -->
+		<Row ListType="ClassicalDistricts" Item="DISTRICT_PRESERVE" Favored="true"/>
+
+	</AiFavoredItems>
 </GameInfo>
