@@ -45,7 +45,7 @@ function ViewScore()
 
 			-- Display as team
 			PopulateScoreTeamInstance(g_ScoreTeamIM:GetInstance(), teamData);
-		elseif #teamData.PlayerData > 0 and teamData.PlayerData[1].PlayerID < 2 then
+		elseif #teamData.PlayerData > 0 and teamData.PlayerData[1].PlayerID < 9 then
 			-- Display as single civ
 			PopulateScoreInstance(g_ScoreIM:GetInstance(), teamData.PlayerData[1]);
 		end
@@ -76,7 +76,7 @@ function ViewGeneric(victoryType:string)
 	for i, teamData in ipairs(genericData) do
 		if #teamData.PlayerData > 1 then
 			PopulateGenericTeamInstance(m_GenericTeamIM:GetInstance(), teamData, victoryType);
-		elseif #teamData.PlayerData > 0 and teamData.PlayerData[1].PlayerID < 2 then
+		elseif #teamData.PlayerData > 0 and teamData.PlayerData[1].PlayerID < 9 then
 			PopulateGenericInstance(m_GenericIM:GetInstance(), teamData.PlayerData[1], victoryType, false);
 		end
 	end
