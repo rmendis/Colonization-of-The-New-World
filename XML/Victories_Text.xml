@@ -9,11 +9,11 @@
 			<Text>Eco Victory</Text>
 		</Row>
 		<Row Tag="LOC_VICTORY_COLONIZATION_SCENARIO_TEXT">
-			<Text>You win this victory when first to build 20 Sanctuaries.</Text>
+			<Text>You win this victory when first to build 15 Sanctuaries.</Text>
 		</Row>
 
 		<Row Tag="LOC_VICTORY_COLONIZATION_SCENARIO_DESCRIPTION">
-			<Text>The people of the New World have preserved its pristine beauty and natural perfection.[NEWLINE]Will you also honour that tradition or plunder the New World for its resources?[NEWLINE][NEWLINE]The player who completes 20 Sanctuaries before time expires (125 turns) will triumph over its rivals.[NEWLINE][NEWLINE][NEWLINE]SPECIAL RULES:[NEWLINE]Domination, Culture, Religious and Science victories are disabled.</Text>
+			<Text>The people of the New World have preserved its pristine beauty and natural perfection.[NEWLINE]Will you also honour that tradition or plunder the New World for its resources?[NEWLINE][NEWLINE]The player who completes 15 Sanctuaries before time expires (175 turns) will triumph over its rivals.[NEWLINE][NEWLINE][NEWLINE]SPECIAL RULES:[NEWLINE]Domination, Culture, Religious and Science victories are disabled.</Text>
 		</Row>
 		
 	</BaseGameText>
