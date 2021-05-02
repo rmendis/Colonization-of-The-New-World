@@ -7,10 +7,13 @@
 	<Types>
 		<!-- City States -->
 		<Delete Type="CIVILIZATION_AMSTERDAM"/>
+		<Delete Type="CIVILIZATION_ANTANANARIVO"/>
+		<Delete Type="CIVILIZATION_AUCKLAND"/>
 		<Delete Type="CIVILIZATION_BRUSSELS"/>
 		<Delete Type="CIVILIZATION_CARTHAGE"/>
 		<Delete Type="CIVILIZATION_GENEVA"/>
 		<Delete Type="CIVILIZATION_GENOA"/>
+		<Delete Type="CIVILIZATION_GRANADA"/>
 		<Delete Type="CIVILIZATION_HATTUSA"/>
 		<Delete Type="CIVILIZATION_HONG_KONG"/>
 		<Delete Type="CIVILIZATION_JAKARTA"/>
@@ -19,7 +22,9 @@
 		<Delete Type="CIVILIZATION_KANDY"/>
 		<Delete Type="CIVILIZATION_KUMASI"/>
 		<Delete Type="CIVILIZATION_MOHENJO_DARO"/>
+		<Delete Type="CIVILIZATION_MUSCAT"/>
 		<Delete Type="CIVILIZATION_NAN_MADOL"/>
+		<Delete Type="CIVILIZATION_PALENQUE"/>
 		<Delete Type="CIVILIZATION_PRESLAV"/>
 		<Delete Type="CIVILIZATION_SEOUL"/>
 		<Delete Type="CIVILIZATION_STOCKHOLM"/>
