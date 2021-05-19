@@ -57,14 +57,16 @@ Events.NationalParkAdded.Add(OnNationalParkAdded);
 
 --------------------------------------------------------------
 
---[[
-function OnGreatWorkCreated(playerID, creatorID, cityX, cityY, buildingID, iGreatWorkIndex)
+local function OnImprovementAddedToMap(iX, iY, eImprovementType, ePlayer)
+	if (eImprovementType == GameInfo.Improvements["IMPROVEMENT_FEITORIA"].Index) then
+		print("Feitoria added");
 
-	print("Great Work added ".. playerID);
+		local pPlayer = Players[ePlayer];
 
-	local pPlayer = Players[playerID];
-	local score = pPlayer:GetScoringScenario3();
-	pPlayer:SetScoringScenario3(score + 100);		-- artifacts = 100 VP
+		-- add 500 gold per Feitoria
+		local pGold:table = pPlayer:GetTreasury();
+		local gold = pGold:GetGoldBalance();
+		pGold:SetGoldBalance(gold + 500);
+	end
 end
-Events.GreatWorkCreated.Add(OnGreatWorkCreated);
---]]
+Events.ImprovementAddedToMap.Add(OnImprovementAddedToMap);
