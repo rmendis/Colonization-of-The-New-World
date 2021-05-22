@@ -83,6 +83,18 @@
 		<Row LeaderType="LEADER_LADY_SIX_SKY" ReligionType="RELIGION_CUSTOM_1" />
 	</FavoredReligions>
 	
+	<Map_GreatPersonClasses>
+		<Update>
+			<Where>
+				<MapSizeType>MAPSIZE_STANDARD</MapSizeType>
+				<GreatPersonClassType>GREAT_PERSON_CLASS_PROPHET</GreatPersonClassType>
+			</Where>
+			<Set>
+				<MaxWorldInstances>4</MaxWorldInstances>
+			</Set>
+		</Update>
+	</Map_GreatPersonClasses>
+	
 	<!--AI changes-->
 	<AiFavoredItems>
 
