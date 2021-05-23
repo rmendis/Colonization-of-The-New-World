@@ -116,7 +116,7 @@ end
 function PopulateGenericInstance(instance:table, playerData:table, victoryType:string, showTeamDetails:boolean )
 	PopulatePlayerInstanceShared(instance, playerData.PlayerID);
 
-	instance.Score:SetText(playerData.PlayerScore .. "/15");
+	instance.Score:SetText(playerData.PlayerScore .. "/20");
 	
 	instance.ButtonBG:SetSizeY(SIZE_SCORE_ITEM_DEFAULT);
 	instance.Details:SetHide(true);

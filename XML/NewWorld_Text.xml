@@ -29,8 +29,22 @@
 			<Text>Eco Victory</Text>
 		</Row>
 		<Row Tag="LOC_VICTORY_MONUMENTS_TT">
-			<Text>Build 15 Sanctuaries.</Text>
+			<Text>Build 20 Sanctuaries.</Text>
 		</Row>
+		<!--
+		<Row Tag="LOC_VICTORY_ENVIRONMENT_NAME">
+			<Text>Eco Victory</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ENVIRONMENT_TT">
+			<Text>Have 500 unimproved rainforest, forest and marsh tiles in your empire.</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ARCHAEOLOGY_NAME">
+			<Text>Archaeology Victory</Text>
+		</Row>
+		<Row Tag="LOC_VICTORY_ARCHAEOLOGY_TT">
+			<Text>Excavate 18 artifacts from archaeology.</Text>
+		</Row>
+		-->
 		
 		<!-- mesoamerian religion -->
 		<Row Tag="LOC_RELIGION_MESOAMERICAN">

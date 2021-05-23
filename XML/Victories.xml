@@ -110,25 +110,25 @@
 	<RequirementSetRequirements>
 		<Row>
 			<RequirementSetId>REQUIREMENTS_COLONIZATION_SCENARIO_VICTORY</RequirementSetId>
-			<RequirementId>HAS_15_SANCTUARIES</RequirementId>
+			<RequirementId>HAS_20_SANCTUARIES</RequirementId>
 		</Row>
 	</RequirementSetRequirements>
 	<Requirements>
 		<Row>
-			<RequirementId>HAS_15_SANCTUARIES</RequirementId>
+			<RequirementId>HAS_20_SANCTUARIES</RequirementId>
 			<RequirementType>REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_BUILDINGS</RequirementType>
 		</Row>
 	</Requirements>
 	<RequirementArguments>
 		<Row>
-			<RequirementId>HAS_15_SANCTUARIES</RequirementId>
+			<RequirementId>HAS_20_SANCTUARIES</RequirementId>
 			<Name>BuildingType</Name>
 			<Value>BUILDING_SANCTUARY</Value>
 		</Row>
 		<Row>
-			<RequirementId>HAS_15_SANCTUARIES</RequirementId>
+			<RequirementId>HAS_20_SANCTUARIES</RequirementId>
 			<Name>Amount</Name>
-			<Value>15</Value>
+			<Value>20</Value>
 		</Row>
 	</RequirementArguments>
 	<!-- Updated Score Victory -->
