@@ -124,8 +124,15 @@
 			</Set>
 		</Update>
 
-		<!-- prioratise preserves -->
-		<Row ListType="ClassicalDistricts" Item="DISTRICT_PRESERVE" Favored="true"/>
-
+		<!-- prioratise preserves over campus -->
+		<Update>
+			<Where>
+				<ListType>ClassicalDistricts</ListType>
+				<Item>DISTRICT_CAMPUS</Item>
+			</Where>
+			<Set>
+				<Item>DISTRICT_PRESERVE</Item>
+			</Set>
+		</Update>
 	</AiFavoredItems>
 </GameInfo>

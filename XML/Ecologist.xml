@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ecologist_Agenda -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 5/23/2021 8:24:12 AM -->
+<GameInfo>
+	<Types>
+		<Row Type="TRAIT_AGENDA_PREFER_PRESERVATION" Kind="KIND_TRAIT"/>
+	</Types>
+
+	<Traits>
+		<Row TraitType="TRAIT_AGENDA_PREFER_PRESERVATION"/>
+	</Traits>
+
+	<Agendas>
+		<Row AgendaType="AGENDA_ECOLOGIST" Name="LOC_AGENDA_ECOLOGIST_NAME" Description="LOC_AGENDA_ECOLOGIST_DESCRIPTION"/>
+	</Agendas>
+
+	<RandomAgendas>
+		<Row AgendaType="AGENDA_ECOLOGIST"/>
+
+		<!-- remove other random agendas -->
+		<Delete AgendaType="AGENDA_AIRPOWER"/>
+		<Delete AgendaType="AGENDA_CITY_STATE_ALLY"/>
+		<Delete AgendaType="AGENDA_CITY_STATE_PROTECTOR"/>
+		<Delete AgendaType="AGENDA_CIVILIZED"/>
+		<Delete AgendaType="AGENDA_CULTURED"/>
+		<Delete AgendaType="AGENDA_DARWINIST"/>
+		<Delete AgendaType="AGENDA_DEVOUT"/>
+		<Delete AgendaType="AGENDA_EXPLOITATIVE"/>
+		<Delete AgendaType="AGENDA_EXPLORER"/>
+		<Delete AgendaType="AGENDA_FUN_LOVING"/>
+		<Delete AgendaType="AGENDA_GREAT_PERSON_ADVOCATE"/>
+		<Delete AgendaType="AGENDA_IDEOLOGUE"/>
+		<Delete AgendaType="AGENDA_INDUSTRIALIST"/>
+		<Delete AgendaType="AGENDA_MONEY_GRUBBER"/>
+		<Delete AgendaType="AGENDA_NUKE_LOVER"/>
+		<Delete AgendaType="AGENDA_PARANOID"/>
+		<Delete AgendaType="AGENDA_POPULOUS"/>
+		<Delete AgendaType="AGENDA_STANDING_ARMY"/>
+		<Delete AgendaType="AGENDA_TECHNOPHILE"/>
+		<Delete AgendaType="AGENDA_WONDER_ADVOCATE"/>
+	</RandomAgendas>
+
+	<AgendaTraits>
+		<Row AgendaType="AGENDA_ECOLOGIST" TraitType="TRAIT_AGENDA_PREFER_PRESERVATION"/>
+	</AgendaTraits>
+
+	<!--
+	<TraitModifiers>
+		<Row TraitType="TRAIT_AGENDA_PREFER_PRESERVATION" ModifierId="AGENDA_PRESERVATION"/>
+	</TraitModifiers>
+	-->
+
+	<AiLists>
+		<Row ListType="PreservationPreference" AgendaType="TRAIT_AGENDA_PREFER_PRESERVATION" System="Buildings"/>
+	</AiLists>
+
+	<AiFavoredItems>
+		<Row ListType="PreservationPreference" Item="BUILDING_SANCTUARY" Favored="1" Value="0"/>
+		<Row ListType="PreservationPreference" Item="BUILDING_GROVE" Favored="1" Value="0"/>
+	</AiFavoredItems>
+
+	<AiListTypes>
+		<Row ListType="PreservationPreference"/>
+	</AiListTypes>
+
+	<AgendaPreferredLeaders>
+		<!-- Pedro should also be an environmentalist -->
+		<Row AgendaType="AGENDA_ENVIRONMENTALIST" LeaderType="LEADER_PEDRO" PercentageChance="50"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_PEDRO" PercentageChance="50"/>
+
+		<!-- Bull Moose Teddy is bumped -->
+		<Update>
+			<Where>
+				<AgendaType>AGENDA_ENVIRONMENTALIST</AgendaType>
+				<LeaderType>LEADER_T_ROOSEVELT</LeaderType>
+			</Where>
+			<Set>
+				<PercentageChance>66</PercentageChance>
+			</Set>
+		</Update>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_T_ROOSEVELT" PercentageChance="33"/>
+		
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_CATHERINE_DE_MEDICI" PercentageChance="85"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_PHILIP_II" PercentageChance="90"/>
+
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_CATHERINE_DE_MEDICI_ALT" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_MONTEZUMA" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_VICTORIA" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LADY_SIX_SKY" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_SIMON_BOLIVAR" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_JOAO_III" PercentageChance="90"/>
+	</AgendaPreferredLeaders>
+</GameInfo>

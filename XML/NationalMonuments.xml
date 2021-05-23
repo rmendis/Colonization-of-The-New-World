@@ -35,11 +35,4 @@
 		</Row>
 	</ModifierArguments>
 	
-	<!-- ui/icons_policies.xml -->
-	<IconDefinitions>
-		<Row Name="ICON_POLICY_NATIONAL_MONUMENTS" Atlas="ICON_ATLAS_POLICIES" Index="0"/>
-
-		<Row Name="ICON_POLICY_NATIONAL_MONUMENTS_FOW" Atlas="ICON_ATLAS_POLICIES_FOW" Index="64"/>
-	</IconDefinitions>
-	
 </GameInfo>

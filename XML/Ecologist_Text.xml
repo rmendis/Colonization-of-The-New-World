@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ecologist_Text -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 5/23/2021 8:25:16 AM -->
+<GameData>
+	<BaseGameText>
+		<Row Tag="LOC_AGENDA_ECOLOGIST_NAME">
+			<Text>Ecologist</Text>
+		</Row>
+		<Row Tag="LOC_AGENDA_ECOLOGIST_DESCRIPTION">
+			<Text>Likes to build Preserves, Groves and Sanctuaries.</Text>
+		</Row>
+	</BaseGameText>
+</GameData>
