@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Maya -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 5/23/2021 3:34:38 PM -->
+<GameInfo>
+
+	<RequirementArguments>
+		
+		<!-- hack -->
+		<Update>
+			<Where>
+				<RequirementId>REQUIRES_OBJECT_6_TILES_FROM_CAPITAL_NOT_CAPITAL</RequirementId>
+				<Name>MaxDistance</Name>
+			</Where>
+			<Set>
+				<Value>9</Value>
+			</Set>
+		</Update>
+
+		<Update>
+			<Where>
+				<RequirementId>REQUIRES_OBJECT_6_TILES_FROM_CAPITAL</RequirementId>
+				<Name>MaxDistance</Name>
+			</Where>
+			<Set>
+				<Value>9</Value>
+			</Set>
+		</Update>
+
+		<Update>
+			<Where>
+				<RequirementId>REQUIRES_OBJECT_7_OR_MORE_TILES_FROM_CAPITAL</RequirementId>
+			</Where>
+			<Set>
+				<Value>10</Value>
+			</Set>
+		</Update>
+		
+	</RequirementArguments>
+
+</GameInfo>
