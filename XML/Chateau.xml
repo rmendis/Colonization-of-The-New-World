@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chateau -->
+<!-- Author: blkbutterfly74 -->
+<!-- DateCreated: 5/24/2021 7:46:53 PM -->
+<GameInfo>
+	<Improvements>
+		<Update>
+			<Where>
+				<ImprovementType>IMPROVEMENT_CHATEAU</ImprovementType>
+			</Where>
+			<Set>
+				<DefenseModifier>4</DefenseModifier>
+				<GrantFortification>2</GrantFortification>
+			</Set>
+		</Update>
+	</Improvements>
+</GameInfo>
