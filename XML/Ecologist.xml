@@ -149,7 +149,7 @@
 	</StrategyConditions>
 
 	<Strategy_Priorities>
-		<Row StrategyType="AGENDA_ECOLOGIST" ListType="PreservationBuildings"/>
-		<Row StrategyType="AGENDA_ECOLOGIST" ListType="PreservationDistricts"/>
+		<Row StrategyType="STRATEGY_ECOLOGIST" ListType="PreservationBuildings"/>
+		<Row StrategyType="STRATEGY_ECOLOGIST" ListType="PreservationDistricts"/>
 	</Strategy_Priorities>
 </GameInfo>
