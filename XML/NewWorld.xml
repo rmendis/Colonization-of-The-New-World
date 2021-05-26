@@ -135,4 +135,33 @@
 			</Set>
 		</Update>
 	</AiFavoredItems>
+	
+	<!-- eureka/inspriation for Conservation swapped with Combustion -->
+	<Boosts>
+		<Update>
+			<Where>
+				<CivicType>CIVIC_CONSERVATION</CivicType>
+			</Where>
+			<Set>
+				<BoostClass>BOOST_TRIGGER_ARTIFACT_EXTRACTED</BoostClass>
+				<DistrictType />
+				<NumItems>0</NumItems>
+				<TriggerDescription>LOC_BOOST_TRIGGER_COMBUSTION</TriggerDescription>
+				<TriggerLongDescription>LOC_BOOST_TRIGGER_LONGDESC_COMBUSTION</TriggerLongDescription>
+			</Set>
+		</Update>
+		
+		<Update>
+			<Where>
+				<TechnologyType>TECH_COMBUSTION</TechnologyType>
+			</Where>
+			<Set>
+				<BoostClass>BOOST_TRIGGER_DISTRICT_APPEAL_LEVEL_MINIMUM_X</BoostClass>
+				<DistrictType>DISTRICT_NEIGHBORHOOD</DistrictType>
+				<NumItems>4</NumItems>
+				<TriggerDescription>LOC_BOOST_TRIGGER_CONSERVATION</TriggerDescription>
+				<TriggerLongDescription>LOC_BOOST_TRIGGER_LONGDESC_CONSERVATION</TriggerLongDescription>
+			</Set>
+		</Update>
+	</Boosts>
 </GameInfo>
