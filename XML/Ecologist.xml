@@ -148,8 +148,8 @@
 		<Row StrategyType="STRATEGY_ECOLOGIST" ConditionFunction="Has Agenda" StringValue="AGENDA_ECOLOGIST"/>
 	</StrategyConditions>
 
-	<StrategyPriorities>
+	<Strategy_Priorities>
 		<Row StrategyType="AGENDA_ECOLOGIST" ListType="PreservationBuildings"/>
 		<Row StrategyType="AGENDA_ECOLOGIST" ListType="PreservationDistricts"/>
-	</StrategyPriorities>
+	</Strategy_Priorities>
 </GameInfo>
