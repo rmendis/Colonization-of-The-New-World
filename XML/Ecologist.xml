@@ -92,23 +92,20 @@
 		<Row AgendaType="AGENDA_ECOLOGIST" TraitType="TRAIT_AGENDA_PREFER_PRESERVATION"/>
 	</AgendaTraits>
 
-	<!--
-	<TraitModifiers>
-		<Row TraitType="TRAIT_AGENDA_PREFER_PRESERVATION" ModifierId="AGENDA_PRESERVATION"/>
-	</TraitModifiers>
-	-->
-
 	<AiLists>
-		<Row ListType="PreservationPreference" AgendaType="TRAIT_AGENDA_PREFER_PRESERVATION" System="Buildings"/>
+		<Row ListType="PreservationBuildings" AgendaType="TRAIT_AGENDA_PREFER_PRESERVATION" System="Buildings"/>
+		<Row ListType="PreservationDistricts" AgendaType="TRAIT_AGENDA_PREFER_PRESERVATION" System="Districts"/>
 	</AiLists>
 
 	<AiFavoredItems>
-		<Row ListType="PreservationPreference" Item="BUILDING_SANCTUARY" Favored="1" Value="0"/>
-		<Row ListType="PreservationPreference" Item="BUILDING_GROVE" Favored="1" Value="0"/>
+		<Row ListType="PreservationBuildings" Item="BUILDING_SANCTUARY" Favored="1"/>
+		<Row ListType="PreservationBuildings" Item="BUILDING_GROVE" Favored="1"/>
+		<Row ListType="PreservationDistricts" Item="DISTRICT_PRESERVE" Favored="1"/>
 	</AiFavoredItems>
 
 	<AiListTypes>
-		<Row ListType="PreservationPreference"/>
+		<Row ListType="PreservationBuildings"/>
+		<Row ListType="PreservationDistricts"/>
 	</AiListTypes>
 
 	<AgendaPreferredLeaders>
@@ -139,4 +136,20 @@
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_SIMON_BOLIVAR" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_JOAO_III" PercentageChance="90"/>
 	</AgendaPreferredLeaders>
+
+	<!-- AI strategy for Ecologist agenda -->
+	<Strategies>
+		<Delete StrategyType="STRATEGY_WONDER_OBSESSED" />
+
+		<Row StrategyType="STRATEGY_ECOLOGIST" NumConditionsNeeded="1"/>
+	</Strategies>
+
+	<StrategyConditions>
+		<Row StrategyType="STRATEGY_ECOLOGIST" ConditionFunction="Has Agenda" StringValue="AGENDA_ECOLOGIST"/>
+	</StrategyConditions>
+
+	<StrategyPriorities>
+		<Row StrategyType="AGENDA_ECOLOGIST" ListType="PreservationBuildings"/>
+		<Row StrategyType="AGENDA_ECOLOGIST" ListType="PreservationDistricts"/>
+	</StrategyPriorities>
 </GameInfo>
