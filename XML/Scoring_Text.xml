@@ -20,11 +20,11 @@
 		</Row>
 
 		<Row Tag="LOC_CATEGORY_SANCTUARIES_NAME">
-			<Text>Sanctuaries</Text>
+			<Text>Preserves</Text>
 		</Row>
 		
 		<Row Tag="LOC_LINE_ITEM_SANCTUARIES_NAME">
-			<Text>Sanctuaries</Text>
+			<Text>Preserves</Text>
 		</Row>
 	</BaseGameText>
 </GameData>

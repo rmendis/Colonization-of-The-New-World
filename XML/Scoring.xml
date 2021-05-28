@@ -103,6 +103,6 @@
 		</Update>
 		<Row LineItemType="LINE_ITEM_ENVIRONMENT" Name="LOC_LINE_ITEM_ENVIRONMENT_NAME" Category="CATEGORY_SCENARIO1" Multiplier="10" ScoringScenario1="true" TieBreakerPriority="99"/>
 		<Row LineItemType="LINE_ITEM_MONUMENTS" Name="LOC_LINE_ITEM_MONUMENTS_NAME" Category="CATEGORY_SCENARIO2" Multiplier="100" ScoringScenario2="true" TieBreakerPriority="100"/>
-		<Row LineItemType="LINE_ITEM_SANCTUARIES" Name="LOC_LINE_ITEM_SANCTUARIES_NAME" Category="CATEGORY_SCENARIO3" Multiplier="100" ScoringScenario3="true" TieBreakerPriority="100"/>
+		<Row LineItemType="LINE_ITEM_SANCTUARIES" Name="LOC_LINE_ITEM_SANCTUARIES_NAME" Category="CATEGORY_SCENARIO3" Multiplier="50" ScoringScenario3="true" TieBreakerPriority="100"/>
 	</ScoringLineItems>
 </GameInfo>

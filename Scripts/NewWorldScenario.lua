@@ -78,3 +78,19 @@ local function OnLoadGameViewStateDone()
 	m_isLoadComplete = true;
 end
 Events.LoadGameViewStateDone.Add(OnLoadGameViewStateDone);
+
+--------------------------------------------------------------
+
+function OnDistrictConstructed(iPlayer, eDistrictType, iX, iY)
+
+	if (eDistrictType == GameInfo.Districts["DISTRICT_PRESERVE"].Index) then
+		print("Preserve added");
+
+		local pPlayer = Players[iPlayer];
+		
+		-- increment Preserve count 
+		local score = pPlayer:GetScoringScenario3();
+		pPlayer:SetScoringScenario3(score + 1);
+	end
+end
+GameEvents.OnDistrictConstructed.Add(OnDistrictConstructed);
