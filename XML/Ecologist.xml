@@ -95,17 +95,21 @@
 	<AiLists>
 		<Row ListType="PreservationBuildings" AgendaType="TRAIT_AGENDA_PREFER_PRESERVATION" System="Buildings"/>
 		<Row ListType="PreservationDistricts" AgendaType="TRAIT_AGENDA_PREFER_PRESERVATION" System="Districts"/>
+		<Row ListType="PreservationYields" AgendaType="TRAIT_AGENDA_PREFER_PRESERVATION" System="Yields"/>
 	</AiLists>
 
 	<AiFavoredItems>
 		<Row ListType="PreservationBuildings" Item="BUILDING_SANCTUARY" Favored="1"/>
 		<Row ListType="PreservationBuildings" Item="BUILDING_GROVE" Favored="1"/>
 		<Row ListType="PreservationDistricts" Item="DISTRICT_PRESERVE" Favored="1"/>
+		<Row ListType="PreservationYields" Item="YIELD_CULTURE" Value="50"/>
+		<Row ListType="PreservationYields" Item="YIELD_FAITH" Value="200"/>
 	</AiFavoredItems>
 
 	<AiListTypes>
 		<Row ListType="PreservationBuildings"/>
 		<Row ListType="PreservationDistricts"/>
+		<Row ListType="PreservationYields"/>
 	</AiListTypes>
 
 	<AgendaPreferredLeaders>
