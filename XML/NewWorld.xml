@@ -6,7 +6,6 @@
 
 	<Types>
 		<!-- City States -->
-		<Delete Type="CIVILIZATION_AMSTERDAM"/>
 		<Delete Type="CIVILIZATION_ANTANANARIVO"/>
 		<Delete Type="CIVILIZATION_AUCKLAND"/>
 		<Delete Type="CIVILIZATION_BRUSSELS"/>

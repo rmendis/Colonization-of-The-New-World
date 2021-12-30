@@ -31,7 +31,7 @@ local g_TSLs = {
 	LEADER_CATHERINE_DE_MEDICI = {35, -91.6},
 	LEADER_CATHERINE_DE_MEDICI_ALT = {35, -91.6},
 	LEADER_PHILIP_II = {39.2, -95.9},
-	--LEADER_MINOR_CIV_AMSTERDAM = {30.1, -84.3}, 
+	LEADER_MINOR_CIV_AMSTERDAM = {30.1, -84.3}, 
 	--LEADER_MINOR_CIV_BRUSSELS cannot be placed cos of proximity
 	LEADER_MINOR_CIV_BUENOS_AIRES = {102.9, -154.7},
 	--LEADER_MINOR_CIV_GENEVA = {36.1, -85.2},
@@ -256,32 +256,36 @@ local landStrips = {
 		{134, 59, 59},
 		{134, 104, 105},
 		{134, 107, 109},
+		{134, 112, 131},
 		{135, 2, 8},
 		{135, 10, 15},
 		{135, 28, 54},
 		{135, 57, 57},
 		{135, 104, 105},
 		{135, 107, 109},
+		{135, 112, 113},
 		{136, 3, 8},
 		{136, 11, 17},
 		{136, 19, 55},
 		{136, 106, 109},
+		{136, 111, 113},
 		{137, 2, 54},
+		{137, 111, 113},
 		{138, 2, 54},
-		{138, 107, 110},
+		{138, 107, 113},
 		{139, 2, 54},
-		{139, 107, 110},
+		{139, 107, 113},
 		{140, 2, 54},
-		{140, 107, 110},
+		{140, 107, 113},
 		{141, 2, 2},
 		{141, 4, 54},
-		{141, 108, 110},
+		{141, 108, 113},
 		{142, 3, 54},
 		{142, 104, 105},
-		{142, 108, 110},
+		{142, 108, 113},
 		{143, 3, 3},
 		{143, 5, 55},
-		{143, 104, 110},
+		{143, 104, 111},
 		{144, 5, 56},
 		{144, 103, 110},
 		{145, 3, 56},
@@ -296,7 +300,6 @@ local landStrips = {
 		{148, 4, 5},
 		{148, 9, 10},
 		{148, 13, 57},
-		{148, 109, 110},
 		{149, 4, 5},
 		{149, 10, 11},
 		{149, 13, 57},
@@ -427,7 +430,7 @@ end
 
 -- Input a Hash; Export width, height, and wrapX
 function GetMapInitData(MapSize)
-	local Width = 111;
+	local Width = 114;
 	local Height = 97;
 	return {Width = Width, Height = Height, WrapX = false}
 end
