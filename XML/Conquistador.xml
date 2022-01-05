@@ -12,5 +12,8 @@
 		</Update>
 	</Units>
 
-
+	<!-- AI adjustment to settle cities -->
+	<UnitAiInfos>
+		<Row UnitType="UNIT_SPANISH_CONQUISTADOR" AiType="UNITAI_SETTLE" />
+	</UnitAiInfos>
 </GameInfo>

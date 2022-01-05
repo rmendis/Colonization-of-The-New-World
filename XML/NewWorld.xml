@@ -163,4 +163,23 @@
 			</Set>
 		</Update>
 	</Boosts>
+
+	<!-- AI fix to build fetoria -->
+	<UnitAiInfos>
+		<Row UnitType="UNIT_PORTUGUESE_NAU" AiType="UNITAI_BUILD" />
+	</UnitAiInfos>
+
+	<!-- AI fixes for naval and air siege -->
+	<UnitAiInfos>
+		<Row UnitType="UNIT_FRIGATE" AiType="UNITTYPE_SIEGE_ALL" />
+		<Row UnitType="UNIT_BRAZILIAN_MINAS_GERAES" AiType="UNITTYPE_SIEGE_ALL" />
+		<Row UnitType="UNIT_BATTLESHIP" AiType="UNITTYPE_SIEGE_ALL" />
+		<Row UnitType="UNIT_BOMBER" AiType="UNITTYPE_SIEGE_ALL" />
+	</UnitAiInfos>
+
+	<!-- AI fixes for privateer & sea dog -->
+	<UnitAiInfos>
+		<Row UnitType="UNIT_PRIVATEER" AiType="UNITAI_EXPLORE" />
+		<Row UnitType="UNIT_ENGLISH_SEADOG" AiType="UNITAI_EXPLORE" />
+	</UnitAiInfos>
 </GameInfo>
