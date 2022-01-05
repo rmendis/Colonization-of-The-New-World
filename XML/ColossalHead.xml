@@ -6,4 +6,15 @@
 	<Improvement_ValidFeatures>
 		<Row ImprovementType="IMPROVEMENT_COLOSSAL_HEAD" FeatureType="FEATURE_JUNGLE"/>
 	</Improvement_ValidFeatures>
+
+	<Improvements>
+		<Update>
+			<Where>
+				<ImprovementType>IMPROVEMENT_COLOSSAL_HEAD</ImprovementType>
+			</Where>
+			<Set>
+				<Appeal>1</Appeal>
+			</Set>
+		</Update>
+	</Improvements>
 </GameInfo>
