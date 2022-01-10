@@ -605,20 +605,17 @@ function GenerateTerrainTypesEarth(plotTypes, iW, iH, iFlags, bNoCoastalMountain
 			local iSnowTop = earth:GetHeight(100);	
 			local iSnowBottom = earth:GetHeight(88);
 				
-			-- 10% tundra							
+			-- 18% tundra							
 			local iTundraTop = iSnowBottom;										
-			local iTundraBottom = earth:GetHeight(78);
-
-										  
-											 
+			local iTundraBottom = earth:GetHeight(70);
 
 			local iPlainsTop = iTundraBottom;
 			local iPlainsBottom = earth:GetHeight(53);
 
 			local iGrassTop = iPlainsBottom;
-			local iGrassBottom = earth:GetHeight(33);
+			local iGrassBottom = earth:GetHeight(30);
 
-			-- 33% desert
+			-- 30% desert
 			local iDesertTop = iGrassBottom;
 			local iDesertBottom = earth:GetHeight(0);
 
