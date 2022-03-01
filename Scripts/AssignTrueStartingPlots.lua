@@ -72,7 +72,7 @@ function AssignTrueStartingPlots:__TryToSetPlayerStartingPlot(pPlayer, leaderNam
 	end
 
 	-- o/w try to recursively assign TSL to adjacent plots
-	for _, aPlot in ipairs(Map.GetAdjacentPlots(pPlot)) do
+	for _, aPlot in ipairs(Map.GetAdjacentPlots(pPlot:GetX(), pPlot:GetY())) do
 		if (self:__TryToSetPlayerStartingPlot(pPlayer, leaderName, aPlot)) then break
 		end
 	end
