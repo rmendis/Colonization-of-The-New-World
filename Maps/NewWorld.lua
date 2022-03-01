@@ -629,6 +629,9 @@ function GenerateTerrainTypesEarth(plotTypes, iW, iH, iFlags, bNoCoastalMountain
 
 			-- arctic circle and patagonia
 			elseif (_lat > 0.73 or _lat < -0.66) then
+				iTundraTop = earth:GetHeight(45);
+				iTundraBottom = earth:GetHeight(0);
+
 				if (plotTypes[index] == g_PLOT_TYPE_MOUNTAIN) then
 					terrainTypes[index] = g_TERRAIN_TYPE_SNOW_MOUNTAIN;
 
@@ -675,7 +678,13 @@ function GenerateTerrainTypesEarth(plotTypes, iW, iH, iFlags, bNoCoastalMountain
 				end
 
 			-- grassland not found further north than 60 deg.
-			elseif (lat > 0.66) then
+			elseif (lat > 0.66) then											
+				iTundraTop = earth:GetHeight(45);										
+				iTundraBottom = earth:GetHeight(5);
+
+				iPlainsTop = iTundraBottom;
+				iPlainsBottom = earth:GetHeight(0);
+
 				if (plotTypes[index] == g_PLOT_TYPE_MOUNTAIN) then
 					terrainTypes[index] = g_TERRAIN_TYPE_SNOW_MOUNTAIN;
 
