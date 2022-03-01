@@ -15,7 +15,6 @@ function AssignTrueStartingPlots.Create(args)
 		__InitStartingData				= AssignTrueStartingPlots.__InitStartingData,
 		__GetIndex						= AssignTrueStartingPlots.__GetIndex,
 		__TryToSetPlayerStartingPlot	= AssignTrueStartingPlots.__TryToSetPlayerStartingPlot,
-		__GetAdjacentPlots				= AssignTrueStartingPlots.__GetAdjacentPlots,
 
 		tsls = args.TRUE_START_LOCATIONS,
 		centerX = args.CENTER_X,
@@ -52,20 +51,6 @@ function AssignTrueStartingPlots:__InitStartingData()
 end
 
 ------------------------------------------------------------------------------
-function AssignTrueStartingPlots:__GetAdjacentPlots(pPlot)
-	local aPlots = {};
-
-	for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
-		local adjacentPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), direction);
-		if (adjacentPlot ~= nil) then
-			table.insert(aPlots, adjacentPlot);
-		end
-	end
-
-	return aPlots;
-end
-
-------------------------------------------------------------------------------
 function AssignTrueStartingPlots:__TryToSetPlayerStartingPlot(pPlayer, leaderName, pPlot)
 	local i = pPlot:GetIndex();
 
@@ -87,7 +72,7 @@ function AssignTrueStartingPlots:__TryToSetPlayerStartingPlot(pPlayer, leaderNam
 	end
 
 	-- o/w try to recursively assign TSL to adjacent plots
-	for _, aPlot in ipairs(self:__GetAdjacentPlots(pPlot)) do
+	for _, aPlot in ipairs(Map.GetAdjacentPlots(pPlot)) do
 		if (self:__TryToSetPlayerStartingPlot(pPlayer, leaderName, aPlot)) then break
 		end
 	end
