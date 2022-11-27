@@ -5,7 +5,7 @@
     <Name>Scenario: Colonization of The New World</Name>
     <Guid>d9e33a39-e54b-4cf8-8204-01c2f1d7fe07</Guid>
     <ProjectGuid>615dc569-41ce-4289-9457-7c0aa2718615</ProjectGuid>
-    <ModVersion>27</ModVersion>
+    <ModVersion>28</ModVersion>
     <Teaser>A scenario inspired by the Civ V scenario Conquest of The New World.</Teaser>
     <Description>A scenario inspired by the Conquest of The New World in Civ V.[NEWLINE]9 civs compete for The New World:[NEWLINE]England[NEWLINE]France[NEWLINE]Spain[NEWLINE]America[NEWLINE]The Aztecs[NEWLINE]Brazil[NEWLINE]The Maya[NEWLINE]Gran Colombia[NEWLINE]Portugal[NEWLINE][NEWLINE]Supports New Frontier Pass persona packs for Teddy and Catherine.</Description>
     <Authors>blkbutterfly74</Authors>
@@ -31,6 +31,7 @@
   <Dependency type="Dlc" title="Portugal Pack" id="FFDF4E79-DEE2-47BB-919B-F5739106627A" />
   <Dependency type="Dlc" title="Kublai Khan &amp; Vietnam PAck" id="A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C" />
   <Dependency type="Dlc" title="DLC: Vikings Content" id="2F6E858A-28EF-46B3-BEAC-B985E52E9BC1" />
+  <Reference type="Dlc" title="Great Negotiators" id="7A66DB58-B354-4061-8C80-95B638DD6F6C" />
 </Associations>]]></AssociationData>
     <ModProperties>
       <CustomProperties />
