@@ -136,6 +136,7 @@
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_MONTEZUMA" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_T_ROOSEVELT_ROUGHRIDER" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_VICTORIA" PercentageChance="90"/>
+		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_VICTORIA_ALT" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_LADY_SIX_SKY" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_SIMON_BOLIVAR" PercentageChance="90"/>
 		<Row AgendaType="AGENDA_ECOLOGIST" LeaderType="LEADER_JOAO_III" PercentageChance="90"/>
